@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culusow Coffee | Premium Boutique Roasters</title>
+    <meta name="description" content="Experience the finest artisanal coffee in an elegant, modern atmosphere. Culusow Coffee offers premium roasts, artisanal pastries, and a serene brewing experience.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#" class="logo">Culusow Coffee</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="story.html">Our Story</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-btn" id="mobile-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Enjoy our coffee in a beautiful atmosphere.</h1>
+            <p>Elevate your coffee ritual with our curated selection of single-origin beans, roasted locally for the discerning palate.</p>
+            <a href="index.html#menu" class="cta-btn">Explore Our Menu</a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-grid reveal">
+            <div class="about-text">
+                <div class="section-title">
+                    <span>Our Heritage</span>
+                    <h2>Brewing with Purpose</h2>
+                </div>
+                <h3>More than just a cup of coffee.</h3>
+                <p>Founded in 2024, Culusow Coffee was born out of a passion for the perfect extraction. We travel the globe to source ethically grown beans, ensuring every sip tells a story of tradition, quality, and care.</p>
+                <p>Our baristas are artisans, trained in the delicate balance of temperature, pressure, and timing to bring out the unique flavor profiles of each roast.</p>
+                <a href="experience.html" class="cta-btn" style="padding: 1rem 2rem; font-size: 0.8rem;">Learn More</a>
+            </div>
+            <div class="about-image glass">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee Brewing">
+                <!-- Fallback image, will replace with generated one later if needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="section-title reveal">
+            <span>Our Selection</span>
+            <h2>Our Menu</h2>
+        </div>
+        
+        <div class="menu-filters reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="classic">Classics</button>
+            <button class="filter-btn" data-filter="specialty">Specialty</button>
+            <button class="filter-btn" data-filter="pastry">Pastries</button>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Classics -->
+            <div class="menu-item glass reveal" data-category="classic">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Velvet Latte">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Velvet Latte</h4>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <p class="item-desc">Double shot espresso, Micro-foamed milk, Silky texture.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="classic">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gold Cortado">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Gold Cortado</h4>
+                        <span class="item-price">$4.75</span>
+                    </div>
+                    <p class="item-desc">Equal parts espresso and warm milk, Perfectly balanced.</p>
+                </div>
+            </div>
+            <!-- Specialty -->
+            <div class="menu-item glass reveal" data-category="specialty">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smoked Vanilla Cold Brew">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Smoked Vanilla Cold Brew</h4>
+                        <span class="item-price">$6.25</span>
+                    </div>
+                    <p class="item-desc">12-hour steep, House-made smoked vanilla bean syrup.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="specialty">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lavender Honey Flat White">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Lavender Honey Flat White</h4>
+                        <span class="item-price">$5.95</span>
+                    </div>
+                    <p class="item-desc">Infused with floral notes and organic honey.</p>
+                </div>
+            </div>
+            <!-- Pastries -->
+            <div class="menu-item glass reveal" data-category="pastry">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Almond Croissant">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Almond Croissant</h4>
+                        <span class="item-price">$4.50</span>
+                    </div>
+                    <p class="item-desc">Double-baked, Flaky layers, Toasted almond cream.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="pastry">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dark Chocolate Ganache Tart">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Dark Chocolate Ganache Tart</h4>
+                        <span class="item-price">$6.00</span>
+                    </div>
+                    <p class="item-desc">70% cocoa, sea salt, buttery shortcrust.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-grid">
+            <!-- Classics -->
+            <div class="menu-item glass reveal" data-category="classic">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Velvet Latte">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Velvet Latte</h4>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <p class="item-desc">Double shot espresso, Micro-foamed milk, Silky texture.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="classic">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gold Cortado">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Gold Cortado</h4>
+                        <span class="item-price">$4.75</span>
+                    </div>
+                    <p class="item-desc">Equal parts espresso and warm milk, Perfectly balanced.</p>
+                </div>
+            </div>
+            <!-- Specialty -->
+            <div class="menu-item glass reveal" data-category="specialty">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smoked Vanilla Cold Brew">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Smoked Vanilla Cold Brew</h4>
+                        <span class="item-price">$6.25</span>
+                    </div>
+                    <p class="item-desc">12-hour steep, House-made smoked vanilla bean syrup.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="specialty">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lavender Honey Flat White">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Lavender Honey Flat White</h4>
+                        <span class="item-price">$5.95</span>
+                    </div>
+                    <p class="item-desc">Infused with floral notes and organic honey.</p>
+                </div>
+            </div>
+            <!-- Pastries -->
+            <div class="menu-item glass reveal" data-category="pastry">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Almond Croissant">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Almond Croissant</h4>
+                        <span class="item-price">$4.50</span>
+                    </div>
+                    <p class="item-desc">Double-baked, Flaky layers, Toasted almond cream.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="pastry">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dark Chocolate Ganache Tart">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Dark Chocolate Ganache Tart</h4>
+                        <span class="item-price">$6.00</span>
+                    </div>
+                    <p class="item-desc">70% cocoa, sea salt, buttery shortcrust.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-grid">
+            <!-- Classics -->
+            <div class="menu-item glass reveal" data-category="classic">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Velvet Latte">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Velvet Latte</h4>
+                        <span class="item-price">$5.50</span>
+                    </div>
+                    <p class="item-desc">Double shot espresso, Micro-foamed milk, Silky texture.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="classic">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Gold Cortado">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Gold Cortado</h4>
+                        <span class="item-price">$4.75</span>
+                    </div>
+                    <p class="item-desc">Equal parts espresso and warm milk, Perfectly balanced.</p>
+                </div>
+            </div>
+            <!-- Specialty -->
+            <div class="menu-item glass reveal" data-category="specialty">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smoked Vanilla Cold Brew">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Smoked Vanilla Cold Brew</h4>
+                        <span class="item-price">$6.25</span>
+                    </div>
+                    <p class="item-desc">12-hour steep, House-made smoked vanilla bean syrup.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="specialty">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lavender Honey Flat White">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Lavender Honey Flat White</h4>
+                        <span class="item-price">$5.95</span>
+                    </div>
+                    <p class="item-desc">Infused with floral notes and organic honey.</p>
+                </div>
+            </div>
+            <!-- Pastries -->
+            <div class="menu-item glass reveal" data-category="pastry">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Almond Croissant">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Almond Croissant</h4>
+                        <span class="item-price">$4.50</span>
+                    </div>
+                    <p class="item-desc">Double-baked, Flaky layers, Toasted almond cream.</p>
+                </div>
+            </div>
+            <div class="menu-item glass reveal" data-category="pastry">
+                <div class="item-img">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dark Chocolate Ganache Tart">
+                </div>
+                <div class="item-content-wrapper">
+                    <div class="item-header">
+                        <h4>Dark Chocolate Ganache Tart</h4>
+                        <span class="item-price">$6.00</span>
+                    </div>
+                    <p class="item-desc">70% cocoa, sea salt, buttery shortcrust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="section-title reveal">
+            <span>The Ambiance</span>
+            <h2>Atmosphere of Serenity</h2>
+        </div>
+        <div class="about-grid reveal" style="direction: rtl;">
+            <div class="about-text" style="direction: ltr;">
+                <h3>A sanctuary for the soul.</h3>
+                <p>Designed with minimalism and warmth in mind, Culusow Coffee provides the perfect backdrop for morning deep-work, quiet reflection, or shared laughter.</p>
+                <ul style="list-style: none; color: var(--text-secondary); margin-bottom: 2rem;">
+                    <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-primary);">✓</span> Ergonomic Seating</li>
+                    <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-primary);">✓</span> Curated Ambient Soundscapes</li>
+                    <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-primary);">✓</span> Fast Artistic Wi-Fi</li>
+                </ul>
+            </div>
+            <div class="about-image glass">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cafe Design">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-grid reveal">
+            <div class="footer-col">
+                <a href="#" class="logo">Culusow Coffee</a>
+                <p>Curating moments of excellence through the art of the brew.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Hours</h5>
+                <p>Mon - Fri: 7am - 8pm</p>
+                <p>Sat - Sun: 8am - 9pm</p>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <p >30, Hamar Weyne, Mogadishu, Somalia</p>
+                <a href="mailto:hello@auracoffee.com">culusow@coffee.com</a>
+                <p>+252619555248-Coffee</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Culusow Coffee. Crafted for the Discerning.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
